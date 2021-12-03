@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d2353900a7184502b51ac5101488bd90 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    <h3 align="center" style="font-size:20px">주요 명소 10개 지역 표시</h3>
+    
+            <div class="folium-map" id="map_d2353900a7184502b51ac5101488bd90" ></div>
+        
+</body>
+<script>    
+    
+            var map_d2353900a7184502b51ac5101488bd90 = L.map(
+                "map_d2353900a7184502b51ac5101488bd90",
+                {
+                    center: [33.38186232527288, 126.595992293211],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_34926cb93d1e48009a77ef5c92e05ece = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+            var marker_66f2e609232b448fb37b8d2109b889eb = L.marker(
+                [33.4348735442325, 126.688504038171],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_4f99fd0e63164ffca232c17d3191cb35 = L.popup({"maxWidth": 200});
+
+        
+            var html_ea0df8580f3446f0907c1baadbf9d9c9 = $(`<div id="html_ea0df8580f3446f0907c1baadbf9d9c9" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 조천읍 비자림로 768</div>`)[0];
+            popup_4f99fd0e63164ffca232c17d3191cb35.setContent(html_ea0df8580f3446f0907c1baadbf9d9c9);
+        
+
+        marker_66f2e609232b448fb37b8d2109b889eb.bindPopup(popup_4f99fd0e63164ffca232c17d3191cb35)
+        ;
+
+        
+    
+    
+            marker_66f2e609232b448fb37b8d2109b889eb.bindTooltip(
+                `<div>
+                     산굼부리
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_890292356d154291a3dcceb07004a121 = L.marker(
+                [33.4595817723328, 126.712603527413],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_1ded5383332744da8c74c8a28d08a83e = L.popup({"maxWidth": 200});
+
+        
+            var html_1782b062c29343e2ab4672065d821f92 = $(`<div id="html_1782b062c29343e2ab4672065d821f92" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 조천읍 거문오름길 5</div>`)[0];
+            popup_1ded5383332744da8c74c8a28d08a83e.setContent(html_1782b062c29343e2ab4672065d821f92);
+        
+
+        marker_890292356d154291a3dcceb07004a121.bindPopup(popup_1ded5383332744da8c74c8a28d08a83e)
+        ;
+
+        
+    
+    
+            marker_890292356d154291a3dcceb07004a121.bindTooltip(
+                `<div>
+                     거문오름
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef60768f3782478ebcde35bf546d2386 = L.marker(
+                [33.2069308530747, 126.290224423429],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_41012ce86ea44a72a0787564ebfa8e74 = L.popup({"maxWidth": 200});
+
+        
+            var html_5c6bc5a1d0134f0499793f12d0165505 = $(`<div id="html_5c6bc5a1d0134f0499793f12d0165505" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 대정읍 형제해안로 318</div>`)[0];
+            popup_41012ce86ea44a72a0787564ebfa8e74.setContent(html_5c6bc5a1d0134f0499793f12d0165505);
+        
+
+        marker_ef60768f3782478ebcde35bf546d2386.bindPopup(popup_41012ce86ea44a72a0787564ebfa8e74)
+        ;
+
+        
+    
+    
+            marker_ef60768f3782478ebcde35bf546d2386.bindTooltip(
+                `<div>
+                     송악산
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a1e80f1e2434e419a3510cc239d2601 = L.marker(
+                [33.4326479593104, 126.930174112734],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_18b89edfb2ce45079582c35527877519 = L.popup({"maxWidth": 200});
+
+        
+            var html_26ef25258e97404c98f2c330d172d206 = $(`<div id="html_26ef25258e97404c98f2c330d172d206" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 성산읍 섭지코지로 93-66</div>`)[0];
+            popup_18b89edfb2ce45079582c35527877519.setContent(html_26ef25258e97404c98f2c330d172d206);
+        
+
+        marker_6a1e80f1e2434e419a3510cc239d2601.bindPopup(popup_18b89edfb2ce45079582c35527877519)
+        ;
+
+        
+    
+    
+            marker_6a1e80f1e2434e419a3510cc239d2601.bindTooltip(
+                `<div>
+                     섭지코지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d92ab861b9b4ad68ea4621d59411c22 = L.marker(
+                [33.5283774190149, 126.771615754394],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_3e0d9c58709141de87e3386ade32effc = L.popup({"maxWidth": 200});
+
+        
+            var html_61c5e106628644179a4a55e3f6eaa88e = $(`<div id="html_61c5e106628644179a4a55e3f6eaa88e" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 구좌읍 만장굴길 182</div>`)[0];
+            popup_3e0d9c58709141de87e3386ade32effc.setContent(html_61c5e106628644179a4a55e3f6eaa88e);
+        
+
+        marker_4d92ab861b9b4ad68ea4621d59411c22.bindPopup(popup_3e0d9c58709141de87e3386ade32effc)
+        ;
+
+        
+    
+    
+            marker_4d92ab861b9b4ad68ea4621d59411c22.bindTooltip(
+                `<div>
+                     만장굴
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5791c0fb90d645358c8726b2c6c063bd = L.marker(
+                [33.4462541339754, 126.911560925407],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_611d78a5931b49e0bbf40d9d85b81f94 = L.popup({"maxWidth": 200});
+
+        
+            var html_cd73f1f70c2343ccad0ec2010fa8aeb6 = $(`<div id="html_cd73f1f70c2343ccad0ec2010fa8aeb6" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 성산읍 일주동로 4282</div>`)[0];
+            popup_611d78a5931b49e0bbf40d9d85b81f94.setContent(html_cd73f1f70c2343ccad0ec2010fa8aeb6);
+        
+
+        marker_5791c0fb90d645358c8726b2c6c063bd.bindPopup(popup_611d78a5931b49e0bbf40d9d85b81f94)
+        ;
+
+        
+    
+    
+            marker_5791c0fb90d645358c8726b2c6c063bd.bindTooltip(
+                `<div>
+                     성산일출봉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ed7a921da8b42eaa844f3fc6dbc7e46 = L.marker(
+                [33.3059196580856, 126.289373709158],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_5099856c2b654117ade3e92df9683824 = L.popup({"maxWidth": 200});
+
+        
+            var html_f1a210340cba43d3bd1d1257b6efe75e = $(`<div id="html_f1a210340cba43d3bd1d1257b6efe75e" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 안덕면 신화역사로 15</div>`)[0];
+            popup_5099856c2b654117ade3e92df9683824.setContent(html_f1a210340cba43d3bd1d1257b6efe75e);
+        
+
+        marker_8ed7a921da8b42eaa844f3fc6dbc7e46.bindPopup(popup_5099856c2b654117ade3e92df9683824)
+        ;
+
+        
+    
+    
+            marker_8ed7a921da8b42eaa844f3fc6dbc7e46.bindTooltip(
+                `<div>
+                     오설록
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cc18abe52d2482883569d079ab201c7 = L.marker(
+                [33.2379943545484, 126.426017654679],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_e81796393a0d43c1bb9de73609e18150 = L.popup({"maxWidth": 200});
+
+        
+            var html_8d83febdb0144675a046dceaec709e1f = $(`<div id="html_8d83febdb0144675a046dceaec709e1f" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 이어도로 36-30(중문동)</div>`)[0];
+            popup_e81796393a0d43c1bb9de73609e18150.setContent(html_8d83febdb0144675a046dceaec709e1f);
+        
+
+        marker_0cc18abe52d2482883569d079ab201c7.bindPopup(popup_e81796393a0d43c1bb9de73609e18150)
+        ;
+
+        
+    
+    
+            marker_0cc18abe52d2482883569d079ab201c7.bindTooltip(
+                `<div>
+                     주상절리
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e12813a30d944049f1c2ce191dad8fd = L.marker(
+                [33.2526754970693, 126.418374242413],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_8e6b9d487a1e45b09f026c3b5030bd2b = L.popup({"maxWidth": 200});
+
+        
+            var html_bbd7d12fdf2c4b25a43b4c2f17d5d254 = $(`<div id="html_bbd7d12fdf2c4b25a43b4c2f17d5d254" style="width: 100.0%; height: 100.0%;">제주특별자치도 서귀포시 천제연로 132(중문동)</div>`)[0];
+            popup_8e6b9d487a1e45b09f026c3b5030bd2b.setContent(html_bbd7d12fdf2c4b25a43b4c2f17d5d254);
+        
+
+        marker_8e12813a30d944049f1c2ce191dad8fd.bindPopup(popup_8e6b9d487a1e45b09f026c3b5030bd2b)
+        ;
+
+        
+    
+    
+            marker_8e12813a30d944049f1c2ce191dad8fd.bindTooltip(
+                `<div>
+                     천제연폭포
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d94d8d1a16f54e32a6231e77e5475f44 = L.marker(
+                [33.5133680610848, 126.521474544312],
+                {}
+            ).addTo(map_d2353900a7184502b51ac5101488bd90);
+        
+    
+        var popup_665f0249ada9428fb44c42a9dd723f28 = L.popup({"maxWidth": 200});
+
+        
+            var html_5578db3279074e6e8528fe16e3a6a06e = $(`<div id="html_5578db3279074e6e8528fe16e3a6a06e" style="width: 100.0%; height: 100.0%;">제주특별자치도 제주시 관덕로 19(삼도이동)</div>`)[0];
+            popup_665f0249ada9428fb44c42a9dd723f28.setContent(html_5578db3279074e6e8528fe16e3a6a06e);
+        
+
+        marker_d94d8d1a16f54e32a6231e77e5475f44.bindPopup(popup_665f0249ada9428fb44c42a9dd723f28)
+        ;
+
+        
+    
+    
+            marker_d94d8d1a16f54e32a6231e77e5475f44.bindTooltip(
+                `<div>
+                     제주관덕정
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
